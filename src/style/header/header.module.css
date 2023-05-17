@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  background-color: #0067A3;
+  color: white;
+}
+header .wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+header .wrapper .logo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .logo {
+    display: none;
+  }
+}/*# sourceMappingURL=header.module.css.map */

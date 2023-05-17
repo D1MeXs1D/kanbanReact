@@ -1,0 +1,158 @@
+body {
+    background-color: #0079BF;
+    display: flex;
+    flex-direction: column;
+    
+    .main {
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .column {
+            width: 282px;
+            background-color: #EBECF0;
+            border-radius: 10px;
+            max-height: 700px;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .tittle {
+                margin: 12px;
+                font-family: Roboto;
+                font-size: 18px;
+            }
+
+            .mesageForNullTask {
+                margin: 20px auto;
+                color: #3d4654;
+                font-family: Roboto;
+                font-size: 20px;
+            }
+
+
+            .listTask {
+                margin-bottom: 35px;
+                max-height: 400px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+                  .link {
+                    text-decoration: none;
+                    color: black;
+                  }
+
+                  .task {
+                        word-wrap: break-word;
+                        background-color: #FFFFFF;
+                        width: 241px;
+                        padding: 7px 5px;
+                        font-size: 18px;
+                        margin: 0px auto 15px auto;
+                        border-radius: 5px;
+                        cursor: pointer;                  
+                }
+            }
+            
+            .button, .buttonAddTask {
+                position: absolute;
+                bottom: 0;
+                margin:0px 12px 8px 12px;
+                color: #5E6C84;
+                font-family: Roboto;
+                font-size: 18px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .buttonAddTask {
+                color: black;
+            }
+
+            .button:hover {
+                color: black;
+            }
+
+
+            .addTask {
+                height: 0px;
+                scale: 0;
+            }
+
+
+            .AddTaskActive {
+                width: 241px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #5E6C84;
+                padding: 10px;
+                border-radius: 10px;
+                max-height: 500px;
+                margin-bottom: 40px;
+
+                input {
+                    margin: 10px 0;
+                    border: none;
+                    height: 25px;
+                    border-radius: 5px;
+                    border-bottom: 1px solid #3d4654;
+                    padding:2px 5px;
+                    font-size: 18px;
+                }
+
+                textarea {
+                    max-width: 235px;
+                    min-width: 235px;
+                    min-height: 50px;
+                    max-height: 300px;
+                    font-family: Roboto;
+                    font-size: 18px;
+                }
+
+                ::placeholder {
+                    font-style: italic;
+                }
+            
+
+                h3 {
+                    position: relative;
+                    margin: 0;
+                    text-align: center;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 500;
+                }    
+            }
+
+            select {
+                width: 80%;
+                font-size: 18px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 0 auto 20px auto;
+                background-color: #FFFFFF;
+                border: #3d4654 2px solid;
+                font-family: 'Roboto';
+            }
+        }
+    }
+}
+
+
+@media  (max-width: 450px) {
+    body {
+        .main {
+            width: 300px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            margin-top: 80px;
+        }
+    }
+}
